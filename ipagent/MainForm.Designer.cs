@@ -92,12 +92,12 @@
             // 
             this.toolStripContainer.ContentPanel.Controls.Add(this.grid);
             this.toolStripContainer.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(641, 383);
+            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(642, 383);
             this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer.Name = "toolStripContainer";
-            this.toolStripContainer.Size = new System.Drawing.Size(641, 454);
+            this.toolStripContainer.Size = new System.Drawing.Size(642, 454);
             this.toolStripContainer.TabIndex = 0;
             this.toolStripContainer.Text = "toolStripContainer1";
             // 
@@ -114,13 +114,13 @@
             this.toolStripProgressBar});
             this.statusStrip.Location = new System.Drawing.Point(0, 0);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(641, 22);
+            this.statusStrip.Size = new System.Drawing.Size(642, 22);
             this.statusStrip.TabIndex = 0;
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(524, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(525, 17);
             this.toolStripStatusLabel.Spring = true;
             this.toolStripStatusLabel.Text = "Status";
             this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,7 +147,7 @@
             this.grid.Location = new System.Drawing.Point(0, 0);
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
-            this.grid.Size = new System.Drawing.Size(641, 383);
+            this.grid.Size = new System.Drawing.Size(642, 383);
             this.grid.TabIndex = 0;
             // 
             // IP
@@ -194,7 +194,7 @@
             this.preferencesToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(641, 24);
+            this.menuStrip.Size = new System.Drawing.Size(642, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -292,14 +292,14 @@
             this.pingToolStripMenuItem.CheckOnClick = true;
             this.pingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.pingToolStripMenuItem.Name = "pingToolStripMenuItem";
-            this.pingToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.pingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pingToolStripMenuItem.Text = "Ping";
             // 
             // tCP80ToolStripMenuItem
             // 
             this.tCP80ToolStripMenuItem.CheckOnClick = true;
             this.tCP80ToolStripMenuItem.Name = "tCP80ToolStripMenuItem";
-            this.tCP80ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.tCP80ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tCP80ToolStripMenuItem.Text = "TCP:80";
             // 
             // tCP443ToolStripMenuItem
@@ -308,7 +308,7 @@
             this.tCP443ToolStripMenuItem.CheckOnClick = true;
             this.tCP443ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tCP443ToolStripMenuItem.Name = "tCP443ToolStripMenuItem";
-            this.tCP443ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.tCP443ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tCP443ToolStripMenuItem.Text = "TCP:443";
             // 
             // sSLToolStripMenuItem
@@ -317,13 +317,13 @@
             this.sSLToolStripMenuItem.CheckOnClick = true;
             this.sSLToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.sSLToolStripMenuItem.Name = "sSLToolStripMenuItem";
-            this.sSLToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.sSLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sSLToolStripMenuItem.Text = "SSL";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(114, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // toolStrip
             // 
@@ -433,7 +433,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 454);
+            this.ClientSize = new System.Drawing.Size(642, 454);
             this.Controls.Add(this.toolStripContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip;
