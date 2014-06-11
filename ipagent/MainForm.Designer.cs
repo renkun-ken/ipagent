@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.grid = new System.Windows.Forms.DataGridView();
-            this.IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ping = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TCP80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TCP443 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importFromToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +70,12 @@
             this.toolStripButtonStart = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonPause = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonStop = new System.Windows.Forms.ToolStripButton();
+            this.IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ping = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCP80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCP443 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Score = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -92,12 +97,12 @@
             // 
             this.toolStripContainer.ContentPanel.Controls.Add(this.grid);
             this.toolStripContainer.ContentPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(642, 383);
+            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(707, 383);
             this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer.Margin = new System.Windows.Forms.Padding(4);
             this.toolStripContainer.Name = "toolStripContainer";
-            this.toolStripContainer.Size = new System.Drawing.Size(642, 454);
+            this.toolStripContainer.Size = new System.Drawing.Size(707, 454);
             this.toolStripContainer.TabIndex = 0;
             this.toolStripContainer.Text = "toolStripContainer1";
             // 
@@ -114,13 +119,13 @@
             this.toolStripProgressBar});
             this.statusStrip.Location = new System.Drawing.Point(0, 0);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(642, 22);
+            this.statusStrip.Size = new System.Drawing.Size(707, 22);
             this.statusStrip.TabIndex = 0;
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(525, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(590, 17);
             this.toolStripStatusLabel.Spring = true;
             this.toolStripStatusLabel.Text = "Status";
             this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,49 +147,13 @@
             this.TCP80,
             this.TCP443,
             this.SSL,
-            this.Status});
+            this.Score});
             this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid.Location = new System.Drawing.Point(0, 0);
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
-            this.grid.Size = new System.Drawing.Size(642, 383);
+            this.grid.Size = new System.Drawing.Size(707, 383);
             this.grid.TabIndex = 0;
-            // 
-            // IP
-            // 
-            this.IP.HeaderText = "IP";
-            this.IP.Name = "IP";
-            this.IP.ReadOnly = true;
-            // 
-            // Ping
-            // 
-            this.Ping.HeaderText = "Ping";
-            this.Ping.Name = "Ping";
-            this.Ping.ReadOnly = true;
-            // 
-            // TCP80
-            // 
-            this.TCP80.HeaderText = "TCP:80";
-            this.TCP80.Name = "TCP80";
-            this.TCP80.ReadOnly = true;
-            // 
-            // TCP443
-            // 
-            this.TCP443.HeaderText = "TCP:443";
-            this.TCP443.Name = "TCP443";
-            this.TCP443.ReadOnly = true;
-            // 
-            // SSL
-            // 
-            this.SSL.HeaderText = "SSL";
-            this.SSL.Name = "SSL";
-            this.SSL.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
             // 
             // menuStrip
             // 
@@ -194,7 +163,7 @@
             this.preferencesToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(642, 24);
+            this.menuStrip.Size = new System.Drawing.Size(707, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -225,6 +194,7 @@
             this.clipboardToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.clipboardToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.clipboardToolStripMenuItem.Text = "Clipboard";
+            this.clipboardToolStripMenuItem.Click += new System.EventHandler(this.clipboardToolStripMenuItem_Click);
             // 
             // textFileToolStripMenuItem
             // 
@@ -292,14 +262,14 @@
             this.pingToolStripMenuItem.CheckOnClick = true;
             this.pingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.pingToolStripMenuItem.Name = "pingToolStripMenuItem";
-            this.pingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pingToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.pingToolStripMenuItem.Text = "Ping";
             // 
             // tCP80ToolStripMenuItem
             // 
             this.tCP80ToolStripMenuItem.CheckOnClick = true;
             this.tCP80ToolStripMenuItem.Name = "tCP80ToolStripMenuItem";
-            this.tCP80ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tCP80ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.tCP80ToolStripMenuItem.Text = "TCP:80";
             // 
             // tCP443ToolStripMenuItem
@@ -308,7 +278,7 @@
             this.tCP443ToolStripMenuItem.CheckOnClick = true;
             this.tCP443ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tCP443ToolStripMenuItem.Name = "tCP443ToolStripMenuItem";
-            this.tCP443ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tCP443ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.tCP443ToolStripMenuItem.Text = "TCP:443";
             // 
             // sSLToolStripMenuItem
@@ -317,13 +287,13 @@
             this.sSLToolStripMenuItem.CheckOnClick = true;
             this.sSLToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.sSLToolStripMenuItem.Name = "sSLToolStripMenuItem";
-            this.sSLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sSLToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.sSLToolStripMenuItem.Text = "SSL";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(114, 6);
             // 
             // toolStrip
             // 
@@ -429,11 +399,64 @@
             this.toolStripButtonStop.Size = new System.Drawing.Size(51, 22);
             this.toolStripButtonStop.Text = "Stop";
             // 
+            // IP
+            // 
+            this.IP.HeaderText = "IP";
+            this.IP.Name = "IP";
+            this.IP.ReadOnly = true;
+            // 
+            // Ping
+            // 
+            dataGridViewCellStyle1.Format = "#";
+            dataGridViewCellStyle1.NullValue = "-";
+            this.Ping.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Ping.HeaderText = "Ping";
+            this.Ping.Name = "Ping";
+            this.Ping.ReadOnly = true;
+            // 
+            // TCP80
+            // 
+            dataGridViewCellStyle2.Format = "#";
+            dataGridViewCellStyle2.NullValue = "-";
+            this.TCP80.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TCP80.HeaderText = "TCP:80";
+            this.TCP80.Name = "TCP80";
+            this.TCP80.ReadOnly = true;
+            // 
+            // TCP443
+            // 
+            dataGridViewCellStyle3.Format = "#";
+            dataGridViewCellStyle3.NullValue = "-";
+            this.TCP443.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TCP443.HeaderText = "TCP:443";
+            this.TCP443.Name = "TCP443";
+            this.TCP443.ReadOnly = true;
+            // 
+            // SSL
+            // 
+            dataGridViewCellStyle4.Format = "#";
+            dataGridViewCellStyle4.NullValue = "-";
+            this.SSL.DefaultCellStyle = dataGridViewCellStyle4;
+            this.SSL.HeaderText = "SSL";
+            this.SSL.Name = "SSL";
+            this.SSL.ReadOnly = true;
+            // 
+            // Score
+            // 
+            dataGridViewCellStyle5.Format = "#";
+            dataGridViewCellStyle5.NullValue = "-";
+            this.Score.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Score.HeaderText = "Score";
+            this.Score.Name = "Score";
+            this.Score.ReadOnly = true;
+            this.Score.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Score.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 454);
+            this.ClientSize = new System.Drawing.Size(707, 454);
             this.Controls.Add(this.toolStripContainer);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip;
@@ -470,12 +493,6 @@
         private System.Windows.Forms.ToolStripMenuItem clipboardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem textFileToolStripMenuItem;
         private System.Windows.Forms.DataGridView grid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ping;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TCP80;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TCP443;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SSL;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Status;
         private System.Windows.Forms.ToolStripMenuItem exportToToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clipboardToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem textFileToolStripMenuItem1;
@@ -502,6 +519,12 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonStart;
         private System.Windows.Forms.ToolStripButton toolStripButtonPause;
         private System.Windows.Forms.ToolStripButton toolStripButtonStop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ping;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TCP80;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TCP443;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SSL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Score;
     }
 }
 
