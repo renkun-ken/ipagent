@@ -42,5 +42,20 @@ namespace ipagent
                 grid.Rows.Add(ip, double.NaN, double.NaN, double.NaN, double.NaN, double.NaN);
             }
         }
+
+        private void toolStripButtonStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButtonPause_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButtonStop_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

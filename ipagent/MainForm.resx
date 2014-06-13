@@ -148,15 +148,15 @@
   <data name="toolStripButtonStart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVGhD7ZiJbcIwFIY5BISz3Ie4IdxHOQboCB2hI3SE
-        jMAIjMAIGYERMkJGePyWXKmtenDYxkj+pE9Bgdi/Ez+SOGAwGAwGwzms1+v2ZrNxmOwz3/04IPQR0oer
-        1Wq33W6f+Nf6g8As9Ben06m/XC4d/hO9QVD6zdls5i0Wi1f+Uz2Zz+d0hi4G88wP0YfJZNJGMHamz3XP
-        juGH6wEC0SWORiN/PB47vV5Pj0JHGLrGfr/vYfvGm7kfw+GQbnEwGLi2bb/w5tSDzkmQh06no74+MBXY
-        dBAmakNtfXS7XZKgj6vxzruQCzoiWdbrdQ9bufXRarVIts1m08VA5NRHo9EgVeKKiJ9WaJQ1rNID71oM
-        tVqNVMu7FkO1WiWVVioVsVegXC6TQsXXQKlUIgW6OPty/oUKhQJJ1CsWi3LvA7lcjiTo5/N5NXfibDZL
-        gnUwAHXPQplMhgR5QHj1T6PpdJpu9JhKpe73PpBMJulKvUQicf83sng8TpcYi8V8BFc7z//Csiy6wD3U
-        a1UiGo3Sf0YiERfqty7EQDAW8EfD4bCHAei9MoeQLOh3/VAo9Bhro8Fg8AjpkzvsfpzVacCKkp1tpl4F
-        ajAYDIbrCAROdo/EvCZOBzIAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHQSURBVGhD7ZiHbcMwEEVd4F7iXuAS9wKXuAyQETJCRsgI
+        GsEjeASPoBE8gkbQCJd/AAMkQYoLSdMAH/AgQ7bIT4lnSQxYLBaLxXIK6/X6cbPZOCx/FrvvB4Q+Qvpw
+        tVrtttvtg/jafBCYQ39xOp36y+XSET8xGwSl35zNZt5isXgRPzWT+XxOJ+hiME/iEHPAVHlEMD7Tp7rn
+        Y8ThZoBAPOdPdjwe+5PJxOn1emYUOsLQJfb7fQ/bV9HM7RiNRnSNw+HQHQwGz6I5/aBzkuSh0+norw9M
+        BZ4O0kRt6K2PbrdLCvRxNd5EF2pBR6TKRqPhYau2PtrtNqm21Wq5GIia+mg2m6RLXBH50wqNcsM6PYiu
+        5VCv10m3oms51Go10mm1WpV7BSqVCmlUfg2Uy2XSoIuzr+ZfqFgskkK9Uqmk9j6Qz+dJgX6hUNBzJ87l
+        ciRZBwPQ9yyUzWZJkgeE1/80mslk6EqP6XT6du8DqVSKLtRLJpO3fyNLJBJ0jrFYzEdwvfP8L+LxOJ3h
+        Hpq1KhGNRuk/I5GIC81bF2IQjAP+aDgc9jAAs1fmEJKDftcPhUL3sTYaDAaPkD65w+77WZ0GXJR8tlmz
+        CtRisVgslxEIvAMhV8S5nmhElAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="toolStripButtonPause.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -168,6 +168,24 @@
         kKNAewwAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="IP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Ping.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TCP80.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TCP443.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SSL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Score.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>55</value>
   </metadata>

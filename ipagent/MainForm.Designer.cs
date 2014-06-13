@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -163,45 +163,45 @@
             // 
             // Ping
             // 
-            dataGridViewCellStyle1.Format = "#";
-            dataGridViewCellStyle1.NullValue = "-";
-            this.Ping.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Format = "#";
+            dataGridViewCellStyle11.NullValue = "-";
+            this.Ping.DefaultCellStyle = dataGridViewCellStyle11;
             this.Ping.HeaderText = "Ping";
             this.Ping.Name = "Ping";
             this.Ping.ReadOnly = true;
             // 
             // TCP80
             // 
-            dataGridViewCellStyle2.Format = "#";
-            dataGridViewCellStyle2.NullValue = "-";
-            this.TCP80.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Format = "#";
+            dataGridViewCellStyle12.NullValue = "-";
+            this.TCP80.DefaultCellStyle = dataGridViewCellStyle12;
             this.TCP80.HeaderText = "TCP:80";
             this.TCP80.Name = "TCP80";
             this.TCP80.ReadOnly = true;
             // 
             // TCP443
             // 
-            dataGridViewCellStyle3.Format = "#";
-            dataGridViewCellStyle3.NullValue = "-";
-            this.TCP443.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Format = "#";
+            dataGridViewCellStyle13.NullValue = "-";
+            this.TCP443.DefaultCellStyle = dataGridViewCellStyle13;
             this.TCP443.HeaderText = "TCP:443";
             this.TCP443.Name = "TCP443";
             this.TCP443.ReadOnly = true;
             // 
             // SSL
             // 
-            dataGridViewCellStyle4.Format = "#";
-            dataGridViewCellStyle4.NullValue = "-";
-            this.SSL.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Format = "#";
+            dataGridViewCellStyle14.NullValue = "-";
+            this.SSL.DefaultCellStyle = dataGridViewCellStyle14;
             this.SSL.HeaderText = "SSL";
             this.SSL.Name = "SSL";
             this.SSL.ReadOnly = true;
             // 
             // Score
             // 
-            dataGridViewCellStyle5.Format = "#";
-            dataGridViewCellStyle5.NullValue = "-";
-            this.Score.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Format = "#";
+            dataGridViewCellStyle15.NullValue = "-";
+            this.Score.DefaultCellStyle = dataGridViewCellStyle15;
             this.Score.HeaderText = "Score";
             this.Score.Name = "Score";
             this.Score.ReadOnly = true;
@@ -367,7 +367,7 @@
             this.toolStripButtonStop});
             this.toolStrip.Location = new System.Drawing.Point(3, 24);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(571, 25);
+            this.toolStrip.Size = new System.Drawing.Size(602, 25);
             this.toolStrip.TabIndex = 1;
             // 
             // toolStripLabel1
@@ -435,6 +435,7 @@
             this.toolStripButtonStart.Name = "toolStripButtonStart";
             this.toolStripButtonStart.Size = new System.Drawing.Size(51, 22);
             this.toolStripButtonStart.Text = "Start";
+            this.toolStripButtonStart.Click += new System.EventHandler(this.toolStripButtonStart_Click);
             // 
             // toolStripButtonPause
             // 
@@ -443,6 +444,7 @@
             this.toolStripButtonPause.Name = "toolStripButtonPause";
             this.toolStripButtonPause.Size = new System.Drawing.Size(58, 22);
             this.toolStripButtonPause.Text = "Pause";
+            this.toolStripButtonPause.Click += new System.EventHandler(this.toolStripButtonPause_Click);
             // 
             // toolStripButtonStop
             // 
@@ -451,6 +453,7 @@
             this.toolStripButtonStop.Name = "toolStripButtonStop";
             this.toolStripButtonStop.Size = new System.Drawing.Size(51, 22);
             this.toolStripButtonStop.Text = "Stop";
+            this.toolStripButtonStop.Click += new System.EventHandler(this.toolStripButtonStop_Click);
             // 
             // MainForm
             // 
