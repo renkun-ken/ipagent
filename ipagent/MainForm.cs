@@ -34,7 +34,13 @@ namespace ipagent
 
         private void clipboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var text = Clipboard.GetText(TextDataFormat.UnicodeText);
+            var ips = ipRegex.Matches(text);
+            foreach (Match match in ips)
+            {
+                var ip = IPAddress.Parse(match.Value);
+                grid.Rows.Add(ip, double.NaN, double.NaN, double.NaN, double.NaN, double.NaN);
+            }
         }
     }
 }

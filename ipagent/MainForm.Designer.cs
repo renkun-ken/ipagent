@@ -28,17 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.grid = new System.Windows.Forms.DataGridView();
+            this.IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ping = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCP80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCP443 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Score = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importFromToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,12 +76,6 @@
             this.toolStripButtonStart = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonPause = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonStop = new System.Windows.Forms.ToolStripButton();
-            this.IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ping = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TCP80 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TCP443 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Score = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -154,6 +154,59 @@
             this.grid.ReadOnly = true;
             this.grid.Size = new System.Drawing.Size(707, 383);
             this.grid.TabIndex = 0;
+            // 
+            // IP
+            // 
+            this.IP.HeaderText = "IP";
+            this.IP.Name = "IP";
+            this.IP.ReadOnly = true;
+            // 
+            // Ping
+            // 
+            dataGridViewCellStyle1.Format = "#";
+            dataGridViewCellStyle1.NullValue = "-";
+            this.Ping.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Ping.HeaderText = "Ping";
+            this.Ping.Name = "Ping";
+            this.Ping.ReadOnly = true;
+            // 
+            // TCP80
+            // 
+            dataGridViewCellStyle2.Format = "#";
+            dataGridViewCellStyle2.NullValue = "-";
+            this.TCP80.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TCP80.HeaderText = "TCP:80";
+            this.TCP80.Name = "TCP80";
+            this.TCP80.ReadOnly = true;
+            // 
+            // TCP443
+            // 
+            dataGridViewCellStyle3.Format = "#";
+            dataGridViewCellStyle3.NullValue = "-";
+            this.TCP443.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TCP443.HeaderText = "TCP:443";
+            this.TCP443.Name = "TCP443";
+            this.TCP443.ReadOnly = true;
+            // 
+            // SSL
+            // 
+            dataGridViewCellStyle4.Format = "#";
+            dataGridViewCellStyle4.NullValue = "-";
+            this.SSL.DefaultCellStyle = dataGridViewCellStyle4;
+            this.SSL.HeaderText = "SSL";
+            this.SSL.Name = "SSL";
+            this.SSL.ReadOnly = true;
+            // 
+            // Score
+            // 
+            dataGridViewCellStyle5.Format = "#";
+            dataGridViewCellStyle5.NullValue = "-";
+            this.Score.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Score.HeaderText = "Score";
+            this.Score.Name = "Score";
+            this.Score.ReadOnly = true;
+            this.Score.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Score.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // menuStrip
             // 
@@ -398,59 +451,6 @@
             this.toolStripButtonStop.Name = "toolStripButtonStop";
             this.toolStripButtonStop.Size = new System.Drawing.Size(51, 22);
             this.toolStripButtonStop.Text = "Stop";
-            // 
-            // IP
-            // 
-            this.IP.HeaderText = "IP";
-            this.IP.Name = "IP";
-            this.IP.ReadOnly = true;
-            // 
-            // Ping
-            // 
-            dataGridViewCellStyle1.Format = "#";
-            dataGridViewCellStyle1.NullValue = "-";
-            this.Ping.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Ping.HeaderText = "Ping";
-            this.Ping.Name = "Ping";
-            this.Ping.ReadOnly = true;
-            // 
-            // TCP80
-            // 
-            dataGridViewCellStyle2.Format = "#";
-            dataGridViewCellStyle2.NullValue = "-";
-            this.TCP80.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TCP80.HeaderText = "TCP:80";
-            this.TCP80.Name = "TCP80";
-            this.TCP80.ReadOnly = true;
-            // 
-            // TCP443
-            // 
-            dataGridViewCellStyle3.Format = "#";
-            dataGridViewCellStyle3.NullValue = "-";
-            this.TCP443.DefaultCellStyle = dataGridViewCellStyle3;
-            this.TCP443.HeaderText = "TCP:443";
-            this.TCP443.Name = "TCP443";
-            this.TCP443.ReadOnly = true;
-            // 
-            // SSL
-            // 
-            dataGridViewCellStyle4.Format = "#";
-            dataGridViewCellStyle4.NullValue = "-";
-            this.SSL.DefaultCellStyle = dataGridViewCellStyle4;
-            this.SSL.HeaderText = "SSL";
-            this.SSL.Name = "SSL";
-            this.SSL.ReadOnly = true;
-            // 
-            // Score
-            // 
-            dataGridViewCellStyle5.Format = "#";
-            dataGridViewCellStyle5.NullValue = "-";
-            this.Score.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Score.HeaderText = "Score";
-            this.Score.Name = "Score";
-            this.Score.ReadOnly = true;
-            this.Score.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Score.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // MainForm
             // 
